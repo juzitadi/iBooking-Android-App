@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title_template">
+
+        <TextView
+            android:id="@+id/title_pwd_change"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25sp"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:background="@color/background"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/go_back"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_below="@+id/title_template"
+
+        android:scaleX="0.8"
+        android:scaleY="0.8">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_rectangular"/>
+
+        <EditText
+            android:id="@+id/et_original_psw"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="old password"
+            android:layout_below="@+id/icon"
+            android:background="@drawable/edit_background"
+            android:paddingLeft="80dp"
+            android:maxLines="1"/>
+
+        <CheckBox
+            android:id="@+id/check1"
+            android:checked="false"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_marginRight="-50dp"
+            android:layout_alignRight="@+id/et_original_psw"
+            android:layout_below="@+id/icon" />
+
+        <EditText
+            android:id="@+id/et_new_psw"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="new password"
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/et_original_psw"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"/>
+
+        <CheckBox
+            android:id="@+id/check2"
+            android:checked="false"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-50dp"
+            android:layout_alignRight="@+id/et_new_psw"
+            android:layout_below="@+id/et_original_psw" />
+
+        <EditText
+            android:id="@+id/et_new_psw_again"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="re-input new password"
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/et_new_psw"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/psw"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/psw"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/et_original_psw"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/psw"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/et_new_psw"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/et_new_psw_again"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="65dp"
+            android:background="@drawable/button_press"
+            android:text="Confirm Change"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

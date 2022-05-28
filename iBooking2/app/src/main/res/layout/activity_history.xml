@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/title_template">
+
+        <TextView
+            android:id="@+id/title_history"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Record History"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:background="@color/background"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btn_history_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/go_back"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/history_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/title_template">
+
+    </ListView>
+
+</RelativeLayout>

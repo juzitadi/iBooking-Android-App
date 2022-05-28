@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_register"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:background="@color/background"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/iv_registeractivity_back"
+        android:layout_width="30dp"
+        android:layout_height="33dp"
+        android:background="@drawable/go_back"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="10dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/title_register"
+
+        android:scaleX="0.7"
+        android:scaleY="0.7">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_rectangular"/>
+
+        <EditText
+            android:id="@+id/et_registeractivity_username"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="account"
+            android:layout_below="@+id/icon"
+            android:background="@drawable/edit_background"
+            android:paddingLeft="80dp"
+            android:maxLines="1"/>
+
+        <EditText
+            android:id="@+id/et_registeractivity_password1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="password"
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/et_registeractivity_username"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"/>
+
+        <CheckBox
+            android:id="@+id/check"
+            android:checked="false"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="-50dp"
+            android:layout_alignRight="@+id/et_registeractivity_password1"
+            android:layout_below="@+id/et_registeractivity_username" />
+
+        <EditText
+            android:id="@+id/et_registeractivity_password2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="30sp"
+            android:hint="re-input password"
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/et_registeractivity_password1"
+            android:paddingLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user_name"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/icon"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/psw"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/et_registeractivity_username"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/psw"
+            android:scaleType="fitXY"
+
+            android:layout_below="@+id/et_registeractivity_password1"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/bt_registeractivity_register"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/et_registeractivity_password2"
+            android:layout_centerVertical="true"
+
+            android:layout_marginTop="65dp"
+            android:background="@drawable/button_press"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="30sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

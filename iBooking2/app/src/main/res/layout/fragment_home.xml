@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_bar"
+        android:background="@color/background"
+        android:layout_marginTop="-10dp"
+        android:scaleY="0.8">
+
+        <ImageView
+            android:id="@+id/iBookinglogo"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_centerVertical="true"
+            android:layout_marginHorizontal="10dp"
+            android:src="@drawable/icon_square_2" />
+
+        <SearchView
+            android:id="@+id/roomListSearchView"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_toRightOf="@+id/iBookinglogo"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="key words"
+
+            android:layout_centerVertical="true"
+            android:background="@drawable/edit_background"
+            android:layout_marginRight="20dp" />
+    </RelativeLayout>
+
+
+    <com.example.ibooking2.activity.MySpinner
+        android:id="@+id/spinner1"
+        android:layout_width="165dp"
+        android:layout_height="65dp"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginTop="-15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/ctype"
+        android:spinnerMode="dropdown" />
+
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/lv"
+        android:layout_marginBottom="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        ptr:ptrAnimationStyle="rotate"
+        ptr:ptrDrawable="@drawable/loader"
+        android:dividerHeight="10dp"
+        android:layout_below="@+id/spinner1"
+        android:layout_marginTop="-10dp">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

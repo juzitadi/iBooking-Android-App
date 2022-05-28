@@ -1,0 +1,3 @@
+"INSERT INTO room (name, location, full_capacity, image_url, score, description) " + "  VALUES('SA169','SA', 50," + R.drawable.icon_square +", 4, 'test word')"
+"INSERT INTO room (name, location, full_capacity, image_url, score, description) " + "  VALUES('BS169','BS', 50," + R.drawable.psw +", 2, 'test word')"
+"INSERT INTO room (name, location, full_capacity, image_url, score, description) " + "  VALUES('CB169','CB', 50," + R.drawable.icon_square + ", 1, 'test word')"

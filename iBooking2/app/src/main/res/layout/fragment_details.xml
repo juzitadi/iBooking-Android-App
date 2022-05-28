@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="40dp"
+    android:layout_marginVertical="20dp">
+
+
+    <TextView
+        android:id="@+id/block_item_template1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Name: "
+        android:textSize="20sp"/>
+
+
+    <TextView
+        android:id="@+id/name_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_toRightOf="@+id/block_item_template1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/block_item_template2"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Distance: "
+        android:textSize="20sp"
+        android:layout_below="@+id/block_item_template1"/>
+    <TextView
+        android:id="@+id/distance1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/block_item_template1"
+        android:layout_toRightOf="@+id/block_item_template1"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/block_item_template3"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Location: "
+        android:textSize="20sp"
+        android:layout_below="@+id/block_item_template2"/>
+    <TextView
+        android:id="@+id/location1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/block_item_template2"
+        android:layout_toRightOf="@+id/block_item_template3"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/block_item_template4"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Score: "
+        android:textSize="20sp"
+        android:layout_below="@+id/block_item_template3"/>
+    <TextView
+        android:id="@+id/usibilityScore1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/block_item_template3"
+        android:layout_toRightOf="@+id/block_item_template4"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/block_item_template5"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Current capacity: "
+        android:textSize="20sp"
+        android:layout_below="@+id/block_item_template4"/>
+    <TextView
+        android:id="@+id/capacity1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/block_item_template4"
+        android:layout_toRightOf="@+id/block_item_template5"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/block_item_template6"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:text="Description:"
+        android:textSize="20sp"
+        android:layout_below="@+id/block_item_template5"/>
+    <TextView
+        android:id="@+id/description1"
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_below="@+id/block_item_template5"
+        android:layout_toRightOf="@+id/block_item_template6"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

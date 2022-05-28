@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/title_template">
+
+        <TextView
+            android:id="@+id/title_room_details"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Room Details"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@color/background"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/button_back"
+            android:layout_width="30dp"
+            android:layout_height="33dp"
+            android:background="@drawable/go_back"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+
+    <com.denzcoskun.imageslider.ImageSlider
+        android:layout_width="match_parent"
+        android:id="@+id/slider"
+        app:auto_cycle="true"
+        app:placeholder="@drawable/telephone"
+        app:error_image="@drawable/telephone"
+        app:delay="0"
+        app:period="1000"
+        app:corner_radius="5"
+        android:layout_height="250dp"
+        android:layout_below="@+id/title_template"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/slider">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/middle_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignTop="@id/fragment_container"
+            app:menu="@menu/middle_navigation"
+            android:background="@color/background"
+            app:itemIconTint="@drawable/button_selector"
+            app:itemTextColor="@drawable/button_selector"
+            app:itemIconSize="25dp"/>
+
+    </FrameLayout>
+
+</RelativeLayout>

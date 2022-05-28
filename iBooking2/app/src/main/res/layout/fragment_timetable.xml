@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="530dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:layout_marginTop="40dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/colorAccent" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="-48dp"
+        android:background="@color/colorAccent"
+        android:layout_below="@+id/datePickerBir"/>
+
+    <DatePicker
+        android:id="@+id/datePickerBir"
+        android:headerBackground="@color/colorCyanPrimaryDark"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:scaleX="0.8"
+        android:scaleY="0.8"
+        android:layout_marginTop="-48dp"/>
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:backgroundTint="@color/colorCyanPrimaryDark"
+        android:background="@drawable/button_press"
+        android:layout_centerHorizontal="true"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:text="Search"
+        android:textAllCaps="false"
+        android:layout_marginTop="-50dp"
+        android:layout_below="@+id/datePickerBir"/>
+
+    <ListView
+        android:id="@+id/timetable_Lv"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonSearch"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/buttonSearch"
+        android:layout_toRightOf="@+id/timetable_Lv"
+
+        android:scaleX="0.8"
+        android:scaleY="0.8">
+
+        <TextView
+            android:id="@+id/ttbl_tv_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:text="[The left side]\nAll valid periods in selected date !"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/bookBtn"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+
+            android:backgroundTint="@color/colorCyanPrimaryDark"
+            android:textColor="@color/white"
+            android:text="Book"
+            android:textAllCaps="false"
+            android:textSize="20sp"
+            android:background="@drawable/button_press"
+            android:layout_below="@+id/ttbl_tv_hint"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

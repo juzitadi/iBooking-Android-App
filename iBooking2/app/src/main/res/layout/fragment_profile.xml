@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="600dp"
+    android:layout_height="870dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp"
+
+        android:scaleX="0.8"
+        android:scaleY="0.8">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user_name" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/icon">
+            <TextView
+                android:id="@+id/tv_profile_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID: "
+                android:textSize="24dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="user_id"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/tv_profile_id"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/icon">
+            <Button
+                android:id="@+id/history"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_press"
+                android:text="Order History"
+                android:textIsSelectable="true"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginVertical="10dp"/>
+
+            <Button
+                android:id="@+id/ChangePwd"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_press"
+                android:text="Change Password"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/history"
+                android:layout_marginVertical="10dp"/>
+
+            <Button
+                android:id="@+id/help"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@drawable/button_press"
+                android:text="For Help"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/ChangePwd"
+                android:layout_marginVertical="10dp"/>
+
+            <Button
+                android:id="@+id/back_login"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:text="Log Out"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:background="@drawable/button_press"
+                android:layout_below="@+id/help"
+                android:layout_marginVertical="10dp"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+
